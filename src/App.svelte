@@ -4,8 +4,17 @@
   import ExportCSV from "./components/ExportCSV.svelte";
 </script>
 
-<h1>Biblioteca</h1>
-<BookForm />
-<BookList />
-<ExportCSV />
 
+<main class="container">
+  <section class="formulario">
+    <h2>Agregar Libro</h2>
+    <BookForm />
+  </section>
+
+  <section class="inventario">
+    <h2>Inventario</h2>
+    <BookList />
+    <ExportCSV />
+  </section>
+
+</main>

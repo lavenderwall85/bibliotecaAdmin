@@ -1,0 +1,143 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #0B192C;
+  background-color: #433f3f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  width: 100%;
+  max-height: max-content;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; 
+  max-width: 1000px; 
+  margin: auto;
+  padding: 30px;
+  
+}
+
+.formulario, .inventario {
+  background: #f8f9fa;
+  padding: 30px; 
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15); 
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem; 
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px 20px 20px 0px;
+}
+
+
+input {
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #433f3f;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button {
+  width: 85%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin: auto;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.inventario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+ul {
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+li {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+
+strong {
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+
+button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
